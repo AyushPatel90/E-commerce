@@ -35,11 +35,11 @@ app.use("/api/v1/product",productRoutes)
 //     res.send("<h1>welcome to ecom</h1>"  
 //     )
 // })
-app.use(express.static(path.join(__dirname , './client/build')));
+// app.use(express.static(path.join(__dirname , './client/build')));
 
-app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname ,'./client/build/index.html'))
-});
+// app.get('*',function(req,res){
+//     res.sendFile(path.join(__dirname ,'./client/build/index.html'))
+// });
 
 //port
 const Port=process.env.PORT || 8080;
